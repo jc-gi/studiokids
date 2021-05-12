@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from garantiwebtasarim.com/roboting-creative/404.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] Tue, 11 May 2021 04:50:09 GMT -->
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../fonts.googleapis.com/css2c38.css?family=Poppins:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">    
+        <title>404 Page not found | Html5 & CSS3 Responsive Theme</title>
+        <meta name="description" content="Page not found">
+    </head>
+    <body class="container">
+          <!--Menü Alanı-->
+        <div class="menu">
+            <input type="checkbox" class="menu__checkbox" id="menu-gecis">
+            <label for="menu-gecis" class="menu__buton">
+                <span class="menu__icon">&nbsp;</span>
+            </label>
+            <div class="menu__arkaplan">&nbsp;</div>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home Page</a></li>
+                    <li class="menu__item"><a href="about-us.html" class="menu__link">About Us</a></li>
+                    <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+                    <li class="menu__item"><a href="projects.html" class="menu__link">Projects</a></li>
+                    <li class="menu__item"><a href="contact-us.html" class="menu__link">Contact Us</a></li>
+                </ul>            
+            </nav>
+        </div>
+        <header class="header-404">
+            <!--Logo Alanı-->
+            <div class="header__logo-alani">
+                <img src="img/logo-white.png" alt="Adosting Creative" class="header__logo">
+            </div>
+            <!--Header Arkaplan Görsel ve Yazı Alanı-->
+            <div class="header__slider-alani-404">
+                <h1 class="slider-yazi-icerikleri-404">
+                    <span class="slider-yazi-icerikleri-404--1"> 
+                        Page not found
+                    </span>
+                    <span class="slider-yazi-icerikleri-404--2">The page you are looking for was not found
+                    </span>
+                </h1>
+            </div>   
+        </header>
+        <main>
+            <section class="hata-404">
+                <div class="h-yazi-ozel h-yazi-margin-ozel">           
+                </div>
+                <div class="tablo">
+                    <div class="tablo--1-ve-2">
+                        <div class="galeri-404" >
+                            <img src="img/roboting-404.png" alt="Roboting 404" class="galeri-404__gorsel galeri-404__gorsel--3">
+                        </div>
+                    </div>           
+                    <!--Galeri Görsel Alanı-->
+                    <div class="tablo--1-ve-2">
+                        <h2 class="h2-baslik-404"> Oops! 404 </h2>
+                        <h3 class="baslik-3 h-yazi-margin-kucuk">Page not found</h3>
+                       <p class="paragraf-404">
+                        The page you are looking for was not found<br>
+                        <a href="index.html">Here you can return to the <strong>home page </strong>.</a>
+                        </p>
+                    </div>
+                </div>
+            </section>    
+        </main><br><br>
+              <!--Footer Alanı-->
+              <footer class="footer-404">
+                <!--footer menu-->           
+                <div class="tablo">
+                    <div class="ozel">
+                    <div class="tablo--2-ve-4">
+                        <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> LINKS </h2> 
+                        <div class="footer__menu">
+                            <ul class="footer__list"> 
+                                 <li class="footer__item"><a href="index.html" class="footer__link">Home Page</a></li>
+                                 <li class="footer__item"><a href="about-us.html" class="footer__link">About Us</a></li>
+                                 <li class="footer__item"><a href="services.html" class="footer__link">Services</a></li>
+                                 <li class="footer__item"><a href="projects.html" class="footer__link">Projects</a></li>
+                                 <li class="footer__item"><a href="contact-us.html" class="footer__link">Contact Us</a></li>
+                            </ul>      
+                        </div>                   
+                    </div>
+                    <div class="tablo--2-ve-4">
+                        <h2 class="h2-baslik-footer h-yazi-margin-kucuk"> SOCIAL MEDIA </h2> 
+                        <p class="footer__sosyal">
+                                <a href="#" class="footer__sosyallink">.facebook</a>&nbsp;
+                                <a href="#" class="footer__sosyallink">.instagram</a> &nbsp;
+                                <a href="#" class="footer__sosyallink">.twitter</a>&nbsp;
+                                <a href="#" class="footer__sosyallink">.linkedin</a>
+                        </div>
+                </div></div>
+                <div class="ozel-copyright">
+                    <div class="footer__copyright">
+                        &copy; 2020 - Roboting Creative Themes.
+                    </div>
+                </div>
+                <a class="yukaricik yukaricik-icon" href="#">↑</a>
+                <script src="js/jquery.slider.js"></script>
+                <script src="js/owl.carousel.min.js"></script>
+                <script src="js/pointer.js"></script>
+                <!--Slider Script-->
+                <script>
+                $('.slide-nav').on('click', function(e) {
+                e.preventDefault();
+                // get current slide
+                var current = $('.flex--active').data('slide'),
+                    // get button data-slide
+                    next = $(this).data('slide');
+        
+                $('.slide-nav').removeClass('active');
+                $(this).addClass('active');
+        
+                if (current === next) {
+                    return false;
+                } else {
+                    $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
+                    $('.flex--active').addClass('animate--end');
+                    setTimeout(function() {
+                    $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+                    $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+                    }, 800);
+                }
+                });
+                </script>
+                <!--Cursor Script-->
+                <script>
+                    init_pointer({
+                        
+                    })
+                </script>
+                <!--Portfolio Script-->
+                <script>
+                    $(document).ready(function() {
+                  var owl = $("#slider-carousel");
+                  owl.owlCarousel({
+                    items: 4,
+                    itemsDesktop: [1000, 4],
+                    itemsDesktopSmall: [900, 2],
+                    itemsTablet: [600, 1],
+                    itemsMobile: false,
+                    pagination: false
+                  });
+                  $(".next").click(function() {
+                    owl.trigger('owl.next');
+                  })
+                  $(".prev").click(function() {
+                    owl.trigger('owl.prev');
+                  })
+                });
+               </script>
+        </footer>
+    </body>
+
+<!-- Mirrored from garantiwebtasarim.com/roboting-creative/404.html by HTTraQt Website Copier/1.x [Karbofos 2012-2017] Tue, 11 May 2021 04:50:10 GMT -->
+</html>
